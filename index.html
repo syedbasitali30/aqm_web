@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+
+        .slide-prew {
+            color: #14B789;
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .slide-next {
+            color: #14B789;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+
+    <title>First Portfolio Bootstrap 5 Theme</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/magnific-popup.css" rel="stylesheet">
+
+    <link href="css/templatemo-first-portfolio-style.css" rel="stylesheet">
+
+    <!--
+
+TemplateMo 578 First Portfolio
+
+https://templatemo.com/tm-578-first-portfolio
+
+-->
+</head>
+
+<body>
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a href="index.html" class="navbar-brand mx-auto mx-lg-0">AQM Solutions</a>
+
+            <div class="d-flex align-items-center d-lg-none">
+                <i class="navbar-icon bi-telephone-plus me-3"></i>
+                <a class="custom-btn btn" href="#section_5">
+                    021-352-92555
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-lg-5">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_2">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4">Technologies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="d-lg-flex align-items-center d-none ms-auto">
+                    <i class="navbar-icon bi-telephone-plus me-3"></i>
+                    <a class="custom-btn btn" href="#section_5">
+                        021-35292555
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-12">
+                        <div class="hero-text">
+                            <div class="hero-title-wrap d-flex align-items-center mb-4">
+                                <!-- <img src="images/happy-bearded-young-man.jpg" class="avatar-image avatar-image-large img-fluid" alt=""> -->
+
+                                <h3 style="background-color: transparent;color: white;font-size: 40px;margin-top: -10px;"
+                                    class="ms-3 mb-0">
+                                    We build a customized solutions for management and maintenance of your business
+                                    </h3>
+                            </div>
+
+                            <!-- <h2 style="margin-top: -10px;" class="mb-4">Your Business</h2> -->
+                            <p class="mb-4"><a class="custom-btn btn custom-link" href="#section_2">Let's begin</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 col-12 position-relative">
+                        <div class="hero-image-wrap"></div>
+                        <img src="https://quiety.themetags.com/assets/img/screen/animated-screen-1.svg"
+                            class="hero-image img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#535da1" fill-opacity="1"
+                    d="M0,160L24,160C48,160,96,160,144,138.7C192,117,240,75,288,64C336,53,384,75,432,106.7C480,139,528,181,576,208C624,235,672,245,720,240C768,235,816,213,864,186.7C912,160,960,128,1008,133.3C1056,139,1104,181,1152,202.7C1200,224,1248,224,1296,197.3C1344,171,1392,117,1416,90.7L1440,64L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+                </path>
+            </svg>
+        </section>
+
+
+        <section class="about section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <img src="https://quiety.themetags.com/assets/img/feature-hero-img.svg" class="about-image img-fluid"
+                            alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <div class="about-thumb">
+
+                            <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+                                <h2 class="text-white me-4 mb-0">INTRODUCTION</h2>
+
+                                <!-- <img src="images/happy-bearded-young-man.jpg" class="avatar-image img-fluid" alt=""> -->
+                            </div>
+
+                            <h4 class="pt-2 mb-3">a little bit about AQM Solutions</h4>
+
+                            <p>The AQM Solutions was started a few years back and as an
+                                organization is still very young. However, the team behind
+                                it has years of collective experience in the field of
+                                Information Technology. It is this rich experience
+                                combined with the infectious enthusiasm of a youth that
+                                puts us ahead of most others. <br/> The AQM Solutions stands ready and eager to assist you
+                                with 360 degrees IT solutions no matter whether it is web
+                                based solutions, graphic requirements, internet
+                                marketing, hardware supply or corporate branding
+                                solutions you may require. <a href="#" style="color: #14B789;font-size: 13px;">Read More...</a>
+                                </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="featured section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-md-8 col-12">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+                            <!-- <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt=""> -->
+
+                            <h2 class="text-white ms-4 mb-0">OUR PRODUCT</h2>
+                        </div>
+                        
+                    </div>
+                    <p>We have delivering customized effective IT solutions and
+                        IT security software. Explore our products to
+                        discover the solutions you need to manage and secure your IT solutions </p>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• E-Marking System (A project of Automation of Examination System)</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Customized ERP Solutions</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• E-Government</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Business Intelligence System</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Point of Sale</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Data Warehousing</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Transport Management</a></li>
+                        <li class="footer-menu-item"><a class="footer-menu-link">• Petrol Pump Automation</a></li>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="clients section-padding">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-12 col-12">
+                        <h3 class="text-center mb-5">PROUD CLIENT</h3>
+                    </div>
+
+                    <div class="col-lg-2 col-4 ms-auto clients-item-height">
+                        <img src="images/clients/cachet.svg" class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/clients/guitar-center.svg" class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/clients/tokico.svg" class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-4 clients-item-height">
+                        <img src="images/clients/shopify.svg" class="clients-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-4 me-auto clients-item-height">
+                        <img src="images/clients/profil-rejser.svg" class="clients-image img-fluid" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="services section-padding" id="section_3">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                            <!-- <img src="images/handshake-man-woman-after-signing-business-contract-closeup.jpg" class="avatar-image img-fluid" alt=""> -->
+
+                            <h2 class="text-white ms-4 mb-0">AREA OF EXPERTISE</h2>
+                        </div>
+
+                        <div class="row pt-lg-5">
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h4 class="mb-0">Windows application programming</h4>
+
+                                        <!-- <div class="services-price-wrap ms-auto">
+                                                <p class="services-price-text mb-0">$2,400</p>
+                                                <div class="services-price-overlay"></div>
+                                            </div> -->
+                                    </div>
+
+                                    <p>You may want to explore Too CSS for great collection of free HTML CSS templates.
+                                    </p>
+
+                                    <!-- <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a> -->
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-globe"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb services-thumb-up">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Branding</h3>
+
+                                        <!-- <div class="services-price-wrap ms-auto">
+                                                <p class="services-price-text mb-0">$1,200</p>
+                                                <div class="services-price-overlay"></div>
+                                            </div> -->
+                                    </div>
+
+                                    <p>You can explore more CSS templates on TemplateMo website by browsing through
+                                        different tags.</p>
+
+                                    <!-- <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a> -->
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-lightbulb"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-12">
+                                <div class="services-thumb">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">Ecommerce</h3>
+
+                                        <!-- <div class="services-price-wrap ms-auto">
+                                                <p class="services-price-text mb-0">$3,600</p>
+                                                <div class="services-price-overlay"></div>
+                                            </div> -->
+                                    </div>
+
+                                    <p>If you need a customized ecommerce website for your business, feel free to
+                                        discuss with me.</p>
+
+                                    <!-- <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a> -->
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-phone"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-6 col-12" style="margin-top: 30px;">
+                                <div class="services-thumb services-thumb-up">
+                                    <div class="d-flex flex-wrap align-items-center border-bottom mb-4 pb-3">
+                                        <h3 class="mb-0">SEO</h3>
+
+                                        <!-- <div class="services-price-wrap ms-auto">
+                                                <p class="services-price-text mb-0">$1,450</p>
+                                                <div class="services-price-overlay"></div>
+                                            </div> -->
+                                    </div>
+
+                                    <p>To list your website first on any search engine, we will work together. First
+                                        Portfolio is one-page CSS Template for free download.</p>
+
+                                    <!-- <a href="#" class="custom-btn custom-border-btn btn mt-3">Discover More</a> -->
+
+                                    <div class="services-icon-wrap d-flex justify-content-center align-items-center">
+                                        <i class="services-icon bi-google"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="projects section-padding" id="section_4">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-7 col-md-8 col-12 ms-auto">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-4">
+                            <!-- <img src="images/white-desk-work-study-aesthetics.jpg" class="avatar-image img-fluid" alt=""> -->
+
+                            <h2 class="text-white ms-4 mb-0">DEVELOPMENT TOOLS</h2>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="container">
+
+                        <div class="mySlides">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Rest API's</small>
+
+                                            <h3 class="projects-title">ASP.NET Core</h3>
+                                            <span class="project-specs">ASP.NET Core is a web framework developed by
+                                                Microsoft. Used to develop web apps and services</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Front End Design</small>
+
+                                            <h3 class="projects-title">React JS</h3>
+                                            <span class="project-specs">React is an front-end JavaScript library for building user interfaces based on components.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Mobile App</small>
+
+                                            <h3 class="projects-title">React Native</h3>
+                                            <span class="project-specs">React Native is an UI software framework created
+                                                by Meta. It is used to develop applications for both Android &
+                                                iOS</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Backend Language</small>
+
+                                            <h3 class="projects-title">C#</h3>
+                                            <span class="project-specs">C# is a general-purpose high-level programming language supporting multiple paradigms.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Backend Language</small>
+
+                                            <h3 class="projects-title">Node JS</h3>
+                                            <span class="project-specs">Node.js is a cross-platform server environment that can run on Windows, Linux, Unix, macOS, and more.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Website Design</small>
+
+                                            <h3 class="projects-title">Wordpress</h3>
+                                            <span class="project-specs">WordPress is a content management system written in hypertext preprocessor language and paired with a MySQL or MariaDB</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="row">
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">DataBase</small>
+
+                                            <h3 class="projects-title">SQL Server</h3>
+                                            <span class="project-specs">Microsoft SQL Server is a relational database
+                                                management system developed by Microsoft. As a database server</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">Database</small>
+
+                                            <h3 class="projects-title">MongoDB</h3>
+                                            <span class="project-specs">MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-12">
+                                    <div class="projects-thumb">
+                                        <div class="projects-info">
+                                            <small class="projects-tag">cloud computing</small>
+
+                                            <h3 class="projects-title">AWS</h3>
+                                            <span class="project-specs">Amazon Web Services, is a subsidiary of Amazon that provides on-demand cloud computing platforms and APIs</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                            <div class="mySlides">
+                                <div class="row">
+    
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="projects-thumb">
+                                            <div class="projects-info">
+                                                <small class="projects-tag">Website Hosting</small>
+    
+                                                <h3 class="projects-title">BlueHost</h3>
+                                                <span class="project-specs">Bluehost is a web hosting company owned by Endurance International Group. It was one of the 20 largest web hosts in 2015</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="projects-thumb">
+                                            <div class="projects-info">
+                                                <small class="projects-tag">Reporting</small>
+    
+                                                <h3 class="projects-title">Crystal Reports</h3>
+                                                <span class="project-specs">Crystal Reports is a business intelligence application marketed to small- and medium-sized businesses by SAP</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                        <div style="display: flex;justify-content: flex-end;">
+                            <a class="slide-next" onclick="plusSlides(-1)">PREV</a>
+                            <span class="slide-next" style="color: gray;padding-left: 5px;padding-right: 5px;"> - </span>
+                            <a class="slide-next" onclick="plusSlides(1)">NEXT</a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section-padding" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-8 col-12">
+                        <div class="section-title-wrap d-flex justify-content-center align-items-center mb-5">
+                            <!-- <img src="images/aerial-view-man-using-computer-laptop-wooden-table.jpg" class="avatar-image img-fluid" alt=""> -->
+
+                            <h2 class="text-white ms-4 mb-0">CONTACT US</h2>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-3 col-md-6 col-12 pe-lg-0">
+                        <div class="contact-info contact-info-border-start d-flex flex-column">
+                            <!-- <strong class="site-footer-title d-block mb-3">Services</strong> -->
+
+                            <!-- <ul class="footer-menu">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Websites</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Branding</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Ecommerce</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">SEO</a></li>
+                            </ul> -->
+
+                            <strong class="site-footer-title d-block mt-0 mb-3">Stay connected</strong>
+
+                            <ul class="social-icon">
+                                <li class="social-icon-item"><a href="https://twitter.com/minthu"
+                                        class="social-icon-link bi-twitter"></a></li>
+
+                                <li class="social-icon-item"><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                <li class="social-icon-item"><a href="#" class="social-icon-link bi-pinterest"></a></li>
+
+                                <li class="social-icon-item"><a href="https://www.youtube.com/templatemo"
+                                        class="social-icon-link bi-youtube"></a></li>
+                            </ul>
+
+                            <strong class="site-footer-title d-block mt-4 mb-3">Start a project</strong>
+
+                            <p class="mb-0">Feel free to contact us now! For create a project timeline with us</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 ps-lg-0">
+                        <div class="contact-info d-flex flex-column">
+                            <strong class="site-footer-title d-block mb-3">Address</strong>
+
+                            <p class="mb-2" style="font-size: 14px;">
+                                Suit No. 5, Hamilton Courts G1, Block 7, 3 Talwar, Zone A Block 7 Clifton, Karachi, Karachi City, Sindh 75600
+                            </p>
+
+                            <strong class="site-footer-title d-block mt-4 mb-3">Email</strong>
+
+                            <p>
+                                <a href="mailto:info@aqmsolutions.com.pk">
+                                    info@aqmsolutions.com.pk
+                                </a>
+                            </p>
+
+                            <strong class="site-footer-title d-block mt-4 mb-3">Call</strong>
+
+                            <p class="mb-0">
+                                <a href="tel: 021-35292555">
+                                    021-35292555
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12 mt-5 mt-lg-0">
+                        <form action="#" method="get" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="name" class="form-control" placeholder="Name"
+                                            required="">
+
+                                        <label for="floatingInput">Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                                            class="form-control" placeholder="Email address" required="">
+
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="website" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox1" value="1">
+
+                                        <label class="form-check-label" for="inlineCheckbox1">
+                                            <i class="bi-globe form-check-icon"></i>
+                                            <span class="form-check-label-text">Websites</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="branding" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox2" value="1">
+
+                                        <label class="form-check-label" for="inlineCheckbox2">
+                                            <i class="bi-lightbulb form-check-icon"></i>
+                                            <span class="form-check-label-text">Branding</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline">
+                                        <input name="ecommerce" type="checkbox" class="form-check-input"
+                                            id="inlineCheckbox3" value="1">
+
+                                        <label class="form-check-label" for="inlineCheckbox3">
+                                            <i class="bi-phone form-check-icon"></i>
+                                            <span class="form-check-label-text">Ecommerce</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-md-6 col-6">
+                                    <div class="form-check form-check-inline me-0">
+                                        <input name="seo" type="checkbox" class="form-check-input" id="inlineCheckbox4"
+                                            value="1">
+
+                                        <label class="form-check-label" for="inlineCheckbox4">
+                                            <i class="bi-google form-check-icon"></i>
+                                            <span class="form-check-label-text">SEO</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="message"
+                                            placeholder="Tell me about the project"></textarea>
+
+                                        <label for="floatingTextarea">Tell me about the project</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-12 ms-auto">
+                                    <button type="submit" class="form-control">Send</button>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-12">
+                    <div class="copyright-text-wrap">
+                        <p class="mb-0">
+                            <span class="copyright-text">Copyright © 2023. All
+                                rights reserved.</span>
+                            Design:
+                            <a rel="sponsored" href="http://www.aqmsolutions.com.pk/" target="_blank">AQM Solutions</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/magnific-popup-options.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
